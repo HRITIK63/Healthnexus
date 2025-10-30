@@ -1,0 +1,112 @@
+ .emergency {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    background: red;
+    padding: 10px 20px;
+    border-radius: 0 0 8px 8px;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    animation: pulse 1.5s infinite;
+  }
+
+  .emergency a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+  }
+
+  @keyframes pulse {
+    0% {
+      background-color: red;
+      transform: rotate(-90deg) scale(1);
+    }
+    50% {
+      background-color: darkred;
+      transform: rotate(-90deg) scale(1.1);
+    }
+    100% {
+      background-color: red;
+      transform: rotate(-90deg) scale(1);
+    }
+  }
+
+
+
+  .community {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  overflow: hidden;
+}
+
+.community h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.community p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+/* Marquee container */
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll-left 35s linear infinite;
+}
+
+/* Continuous scrolling */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.img-container {
+  flex: 0 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.img-container img:hover {
+  transform: scale(1.05) rotate(6deg);
+}
+
+.bottom-text {
+  font-size: 1rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+}

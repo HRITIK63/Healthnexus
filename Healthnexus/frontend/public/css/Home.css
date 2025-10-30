@@ -1,0 +1,31 @@
+.homepage {
+  height: 20vh;
+  background-image: url("img/doc.png"); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  animation: moveBg 20s linear infinite;
+}
+
+@keyframes moveBg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.homepage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for readability */
+}

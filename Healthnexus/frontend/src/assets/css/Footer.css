@@ -1,0 +1,27 @@
+.footer {
+  font-size: 0.9rem;
+}
+
+.footer-logo {
+  width: 160px;
+  height: auto;
+}
+
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #0dcaf0;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: #ddd;
+  font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+  color: #0dcaf0;
+}
